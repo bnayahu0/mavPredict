@@ -12,3 +12,16 @@ screenshot - this is api call example by postman
 wish you luck :)
 
 Amihay
+
+I run it with python 3.10. I think older versions should work too.
+to install dependencies, run:
+
+pip install -r requirments.txt
+and then just:
+python main.py
+
+to build the container, run 
+docker build -t amihaypredic:1.0.1 .
+
+and then 
+docker run -p 5000:5000 amihaypredic:1.0.1
